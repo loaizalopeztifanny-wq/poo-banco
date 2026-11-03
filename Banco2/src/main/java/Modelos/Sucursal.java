@@ -12,13 +12,15 @@ public class Sucursal {
     private String codigo;
     private String domicilio;
     private int numeroEmpleados;
+    private contrato[] contrato;
 
-    public Sucursal(String codigo, String domicilio, int numeroEmpleados) {
+    public Sucursal(String codigo, String domicilio, int numeroEmpleados, contrato[] contrato) {
         this.codigo = codigo;
         this.domicilio = domicilio;
         this.numeroEmpleados = numeroEmpleados;
+        this.contrato = contrato;
     }
-
+    
     public String getCodigo (){
         return codigo;
     }
@@ -42,4 +44,16 @@ public class Sucursal {
     public void setNumeroEmpleados(int numeroEmpleados){
         this.numeroEmpleados = numeroEmpleados;
     }
+
+    public contrato[] getContrato() {
+        return contrato;
+    }
+
+    public void setContrato(contrato[] contrato) {
+        this.contrato = contrato;
+    }
+
+    
+    
+    
 }
