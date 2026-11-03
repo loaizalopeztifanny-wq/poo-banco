@@ -1,1 +1,31 @@
 /Banco2/target/
+# Archivos compilados de Java
+*.class
+
+# Carpetas de compilación
+target/
+build/
+out/
+
+# Archivos temporales
+*.tmp
+*.log
+*.swp
+*.swo
+*~
+
+# Archivos temporales de Vim
+*.swp
+*.swo
+
+# Configuración de IDE
+.idea/
+.vscode/
+*.iml
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración locales
+.env
