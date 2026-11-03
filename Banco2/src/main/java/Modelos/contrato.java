@@ -14,8 +14,8 @@ public class contrato {
     private Date fecha;
     private String nombre;
     private Boolean arma;
-
-    public contrato(Date fecha, String nombre, Boolean arma) {
+   
+    public contrato(Date fecha, String nombre, Boolean arma){
         this.fecha = fecha;
         this.nombre = nombre;
         this.arma = arma;
@@ -44,4 +44,6 @@ public class contrato {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+    
+   
 }
