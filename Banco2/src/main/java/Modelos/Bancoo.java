@@ -11,14 +11,20 @@ package Modelos;
 public class Bancoo {
     private String codigo;
     private String domicilioCentral;
+    private Sucursal[] sucursales;
 
-    public Bancoo(String codigo, String domicilioCentral) {
+    public Bancoo(String codigo, String domicilioCentral, Sucursal[] sucursales) {
         this.codigo = codigo;
         this.domicilioCentral = domicilioCentral;
+        this.sucursales = sucursales;
     }
     
     public String getCodigo(){
         return codigo;
+    }
+
+    public Sucursal[] getSucursales() {
+        return sucursales;
     }
     
     public void setCodigo (String codigo){
@@ -32,4 +38,10 @@ public class Bancoo {
     public void setDomicilioCentral(String domicilioCentral){
         this.domicilioCentral = domicilioCentral;
     }
+
+    public void setSucursales(Sucursal[] sucursales) {
+        this.sucursales = sucursales;
+    }
+    
+    
 }

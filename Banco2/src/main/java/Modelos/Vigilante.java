@@ -11,10 +11,12 @@ import java.util.Date;
 public class Vigilante {
     private String codigo;
     private Date fechaNacimiento;
+    private contrato contrato;
 
-    public Vigilante(String codigo, Date fechaNacimiento) {
+    public Vigilante(String codigo, Date fechaNacimiento, contrato contrato) {
         this.codigo = codigo;
         this.fechaNacimiento = fechaNacimiento;
+        this.contrato = contrato;
     }
     
     public String getCodigo (){
@@ -32,4 +34,13 @@ public class Vigilante {
     public void setFechaNacimiento (Date fechaNacimiento){
         this.fechaNacimiento = fechaNacimiento;
     }
+
+    public contrato getContrato() {
+        return contrato;
+    }
+
+    public void setContrato(contrato contrato) {
+        this.contrato = contrato;
+    }
+    
 }
