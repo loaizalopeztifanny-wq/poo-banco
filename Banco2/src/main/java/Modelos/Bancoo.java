@@ -12,7 +12,7 @@ public class Bancoo {
     private String codigo;
     private String domicilioCentral;
     private Sucursal[] sucursales;
-
+    
     public Bancoo(String codigo, String domicilioCentral, Sucursal[] sucursales) {
         this.codigo = codigo;
         this.domicilioCentral = domicilioCentral;
