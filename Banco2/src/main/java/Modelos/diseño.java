@@ -43,6 +43,7 @@ public class diseño extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Ubuntu Sans Mono", 0, 12)); // NOI18N
         jButton1.setText("Registrar Banco");
+        jButton1.addActionListener(this::jButton1ActionPerformed);
 
         jButton2.setFont(new java.awt.Font("Ubuntu Sans Mono", 0, 12)); // NOI18N
         jButton2.setText("Registrar Atraco");
@@ -54,6 +55,7 @@ public class diseño extends javax.swing.JFrame {
         jButton4.setText("Consultar Bandas");
 
         jButton5.setText("Consultar Atraco");
+        jButton5.addActionListener(this::jButton5ActionPerformed);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -113,6 +115,18 @@ public class diseño extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        
+        RegistrarBanco registroBanco = new RegistrarBanco();
+        registroBanco.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments

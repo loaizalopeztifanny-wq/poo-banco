@@ -8,22 +8,30 @@ package Modelos;
  *
  * @author User
  */
+import java.util.ArrayList;
+
 public class Bancoo {
     private String codigo;
+    private String nombreBanco;
     private String domicilioCentral;
-    private Sucursal[] sucursales;
-    
-    public Bancoo(String codigo, String domicilioCentral, Sucursal[] sucursales) {
+    private ArrayList<Sucursal> sucursales;
+
+    public Bancoo(String codigo, String nombreBanco, String domicilioCentral, ArrayList<Sucursal> sucursales) {
         this.codigo = codigo;
+        this.nombreBanco = nombreBanco;
         this.domicilioCentral = domicilioCentral;
         this.sucursales = sucursales;
+    }
+
+    public String getNombreBanco() {
+        return nombreBanco;
     }
     
     public String getCodigo(){
         return codigo;
     }
 
-    public Sucursal[] getSucursales() {
+    public ArrayList<Sucursal> getSucursales() {
         return sucursales;
     }
     
@@ -42,6 +50,9 @@ public class Bancoo {
     public void setSucursales(Sucursal[] sucursales) {
         this.sucursales = sucursales;
     }
-    
+
+    public void setNombreBanco(String nombreBanco) {
+        this.nombreBanco = nombreBanco;
+    }
     
 }
